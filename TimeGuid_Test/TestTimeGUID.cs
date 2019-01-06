@@ -97,10 +97,7 @@ namespace SlugEnt.UnitTest
 				if ( digit < 8 ) { startingValue = 50 + digit; }
 				else if ( digit < 34 ) { startingValue = 57 + digit; }
 				else { startingValue = 97 + digit - 34;}
-/*				if ( digit < 26 ) { startingValue = 65 + digit; }
-				else if ( digit < 52 ) { startingValue = 97 + (digit - 26); }
-				else { startingValue = 48 + (digit - 52); }
-				*/
+
 			}
 
 			string val = Convert.ToChar(startingValue).ToString();
