@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <AssemblyVersion>1.0.0.16</AssemblyVersion>
-    <FileVersion>1.0.0.16</FileVersion>
+    <AssemblyVersion>1.0.0.24</AssemblyVersion>
+    <FileVersion>1.0.0.24</FileVersion>
     <Title>TimeGuid</Title>
     <PackageId>SlugEnt.TimeGuid</PackageId>
     <Authors>Scott Herrmann</Authors>
