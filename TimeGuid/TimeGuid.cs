@@ -19,7 +19,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Slug
+namespace SlugEnt
 {
 	/// <summary>
 	/// Converts a time - 15:30:56 into a TimeGuid object represented as 3 recognizable and easily displayed characters - for instance - Ld7
@@ -55,7 +55,7 @@ namespace Slug
 
 		}
 
-
+		 
 
 		/// <summary>
 		/// Converts the time part of the dateTime to a TimeGuid object (HMS)
