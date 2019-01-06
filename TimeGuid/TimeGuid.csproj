@@ -1,9 +1,27 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <AssemblyVersion>1.0.0.3</AssemblyVersion>
-    <FileVersion>1.0.0.3</FileVersion>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <Title>TimeGuid</Title>
+    <PackageId>SlugEnt.TimeGuid</PackageId>
+    <Authors>Scott Herrmann</Authors>
+    <Company>Slug Enterprises</Company>
+
+    <Description>A class for converting a time into an easily readable compressed 3 character format.</Description>
+
+    <Copyright>Scott Herrmann 2018</Copyright>
+	  <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+	  
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+	  <PackageTags>time;guid</PackageTags>
+    <PackageProjectUrl>https://bitbucket.org/wshpersonal/timeguid/wiki/Home</PackageProjectUrl>
+    <RepositoryUrl>https://bitbucket.org/wshpersonal/timeguid/src</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+
+    <PackageReleaseNotes>This is a Test Upload of the Nuget</PackageReleaseNotes>
   </PropertyGroup>
 
 </Project>
