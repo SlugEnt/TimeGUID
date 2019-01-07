@@ -195,6 +195,12 @@ namespace SlugEnt {
             return true;
         }
 
+
+
+        // Allow direct setting to/from string
+        public static implicit operator string (TimeGuid timeGuid) { return timeGuid._value; }
+        public static implicit operator TimeGuid (string s) { return new TimeGuid(s);}
+
         #endregion
 
 

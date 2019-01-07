@@ -296,6 +296,20 @@ namespace SlugEnt.UnitTest {
         #region "Misc Tests"
 
 
+        // Validates we can set to/from a string object directly
+        [Test]
+        public void CanSetToString () {
+            TimeGuid x = new TimeGuid(DateTime.Now);
+            string val = x;
+
+            TimeGuid y = val;
+            Assert.AreEqual(x.ToString,val,"A10:  Expected them to be same value");
+            Assert.AreEqual(val,y.ToString,"A20:  Expected them to be same value");
+            Assert.AreEqual(x,y,"A30: Expected them to be equal");
+        }
+
+
+
         // This test runs through all 60 minutes ensuring that from a sorting and comparison standpoint the next minute is considered greater than the previous.
         // Since seconds uses the same conversion math, we are also validating the seconds.
         [Test]
