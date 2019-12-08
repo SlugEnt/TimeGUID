@@ -222,7 +222,6 @@ namespace SlugEnt.UnitTest {
         }
 
 
-
         // Validate across a random sample of Hours, minutes and seconds that proper TimeGuid's are generated.
         // We also then generate a second random TimeGuid that is greater than the first and compare them to ensure 
         // equality operators are working correctly.
