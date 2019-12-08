@@ -22,15 +22,14 @@ namespace SlugEnt {
     /// Converts a time - 15:30:56 into a TimeGuid object represented as 3 recognizable and easily displayed characters - for instance - Ld7
     /// </summary>
     public struct TimeGuid : IEquatable<TimeGuid>, IComparable<TimeGuid> {
-        private static short rA = 65;
-        private static short rZ = 90;
-        private static short ra = 97;
-        private static short rz = 122;
-        private static short r2 = 50;
-        private static short r9 = 57;
+        private static readonly short rA = 65;
+        private static readonly short rZ = 90;
+        private static readonly short ra = 97;
+        private static readonly short rz = 122;
+        private static readonly short r2 = 50;
+        private static readonly short r9 = 57;
 
-
-        private string _value;
+        private readonly string _value;
 
 
         // Creates a TimeGuid Value from a string.  Note, the string is validated and will throw an ArgumentException if it 
@@ -70,7 +69,7 @@ namespace SlugEnt {
         /// <summary>
         /// Retrieves the Value of this TimeGuid object as a string.
         /// </summary>
-        public string ToString {
+        public new string ToString {
             get => _value;
         }
 
@@ -210,6 +209,13 @@ namespace SlugEnt {
         /// <param name="other"></param>
         /// <returns></returns>
         public bool Equals (TimeGuid other) { return (_value.Equals (other._value, StringComparison.Ordinal)); }
+
+
+        public override bool Equals (object o) {
+	        if ( !(o is TimeGuid) ) return false;
+
+	        return Equals((TimeGuid) o);
+        }
 
 
         // Math comparison functions
