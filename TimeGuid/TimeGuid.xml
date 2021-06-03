@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TimeGuid</name>
+    </assembly>
+    <members>
+        <member name="T:SlugEnt.TimeGuid">
+            <summary>
+            Converts a time - 15:30:56 into a TimeGuid object represented as 3 recognizable and easily displayed characters - for instance - Ld7
+            </summary>
+        </member>
+        <member name="M:SlugEnt.TimeGuid.#ctor(System.DateTime)">
+            <summary>
+            Creates a TimeGuid based upon the DateTime parameter passed in.  
+            </summary>
+            <param name="time">The Datetime object that contains the Time we want to create a timeGuid for.</param>
+        </member>
+        <member name="P:SlugEnt.TimeGuid.ToString">
+            <summary>
+            Retrieves the Value of this TimeGuid object as a string.
+            </summary>
+        </member>
+        <member name="M:SlugEnt.TimeGuid.ConvertHoursToChar(System.Int32)">
+            <summary>
+            Converts Hours into a single character.  We use the upper case letters to represent hours.
+            </summary>
+            <param name="hours"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SlugEnt.TimeGuid.ConvertMinutesToChar(System.Int32)">
+            <summary>
+            Converts Minutes into a single character.  Because there are 60 minutes, we have to use Uppercase, Lowercase and numbers
+            to represent the minutes.
+            </summary>
+            <param name="minutes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SlugEnt.TimeGuid.ConvertSecondsToChar(System.Int32)">
+            <summary>
+            Converts Seconds into a single character.  Because there are 60 seconds, we have to use Uppercase, Lowercase and numbers
+            to represent the seconds.
+            </summary>
+            <param name="seconds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SlugEnt.TimeGuid.ConvertTimeUnit60ToChar(System.Int32)">
+            <summary>
+            Converts a 60 number value into a single character.  In order to preserve proper sorting (at least via ascii) we start with
+            numbers and then use Uppercase letters and then finally lowercase numbers.
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SlugEnt.TimeGuid.ConvertDateTimeToTimeGuid(System.DateTime)">
+            <summary>
+            Converts the time part of the dateTime to a TimeGuid object (HMS)
+            </summary>
+            <param name="d">DateTime object containing the time you wish to convert.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SlugEnt.TimeGuid.IsValidHourSymbol(System.Char)">
+            <summary>
+            Returns true if the specified character value is a valid symbol for the hour field.
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SlugEnt.TimeGuid.IsValidMinuteSecondSymbol(System.Char)">
+            <summary>
+            Returns true if the specified character value is a valid symbol for a minute or second value.
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SlugEnt.TimeGuid.IsValidTimeGuidString(System.String)">
+            <summary>
+            Validates a string to determine if it is a valid TimeGuid string.  Returns True if valid TimeGuid string.
+            </summary>
+            <param name="timeGuidValue">The string to check.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SlugEnt.TimeGuid.Equals(SlugEnt.TimeGuid)">
+            <summary>
+            Are the 2 TimeGuids equal to each other?  True if they are, false otherwise.
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SlugEnt.TimeGuid.GetHashCode">
+            <summary>
+            Retrieves a hashcode for this TimeGuid.
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:SlugEnt.TimeGuid.CompareTo(SlugEnt.TimeGuid)" -->
+    </members>
+</doc>
