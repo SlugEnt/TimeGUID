@@ -65,7 +65,6 @@ namespace SlugEnt {
         public TimeGuid (DateTime time) { _value = ConvertDateTimeToTimeGuid (time); }
 
 
-
         /// <summary>
         /// Retrieves the Value of this TimeGuid object as a string.
         /// </summary>
