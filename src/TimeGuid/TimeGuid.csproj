@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyVersion>1.2.3.6</AssemblyVersion>
+    <AssemblyVersion>1.2.3.7</AssemblyVersion>
     <FileVersion>1.2.3.0</FileVersion>
     <Title>TimeGuid</Title>
     <PackageId>SlugEnt.TimeGuid</PackageId>
