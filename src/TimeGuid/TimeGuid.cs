@@ -57,7 +57,6 @@ namespace SlugEnt {
         }
 
 
-
         /// <summary>
         /// Creates a TimeGuid based upon the DateTime parameter passed in.  
         /// </summary>
