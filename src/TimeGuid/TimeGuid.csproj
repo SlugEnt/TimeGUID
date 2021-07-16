@@ -27,7 +27,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>C:\A_Dev\SlugEnt\TimeGUID\TimeGuid\TimeGuid.xml</DocumentationFile>
+    <DocumentationFile>C:\A_Dev\SlugEnt\TimeGUID\src\TimeGuid\TimeGuid.xml</DocumentationFile>
     <ShouldCreateLogs>True</ShouldCreateLogs>
     <AdvancedSettingsExpanded>False</AdvancedSettingsExpanded>
     <UpdateAssemblyVersion>False</UpdateAssemblyVersion>
@@ -37,6 +37,11 @@
     <PackageVersionSettings>AssemblyVersion.IncrementOnce.None</PackageVersionSettings>
     <AssemblyInfoVersionType>SettingsVersion</AssemblyInfoVersionType>
     <InheritWinAppVersionFrom>None</InheritWinAppVersionFrom>
+    <NoWarn>1701;1702</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\A_Dev\SlugEnt\TimeGUID\src\TimeGuid\TimeGuid.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>

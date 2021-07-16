@@ -1,4 +1,5 @@
 {
+  "ConfigStructureVersion": "0.31.2",
   "UseCodeCoverage": true,
   "CodeCoverageThreshold": 90,
   "DeployProdRoot": null,
@@ -9,18 +10,20 @@
   "DeployFolderUsesSemVer": true,
   "DeployToAssemblyFolders": false,
   "GitRemote": null,
+  "AngularDeployRootName": null,
   "Projects": [
     {
       "Name": "TimeGuid",
       "Deploy": "Nuget",
-      "Framework": "netstandard2.0",
+      "HasTypeWriterScripts": false,
       "IsTestProject": false
     },
     {
       "Name": "TimeGuid_Test",
       "Deploy": "None",
-      "Framework": "netcoreapp2.1",
+      "HasTypeWriterScripts": false,
       "IsTestProject": true
     }
-  ]
+  ],
+  "AngularProjects": []
 }
