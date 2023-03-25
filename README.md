@@ -1,29 +1,17 @@
-# README #
+# TimeGuid #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+TimeGuid is a simple class used to represent a time down to the seconds level in only 3 characters.
 
-### What is this repository for? ###
+## Use
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
-### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+            // Create a TimeGuid
+            DateTime today = DateTime.Now;
+            TimeGuid x = new TimeGuid (today);
 
-### Contribution guidelines ###
+            // Create a timeGuid 3 minutes in future.
+            TimeGuid x = new TimeGuid (today.AddMinutes (3));
 
-* Writing tests
-* Code review
-* Other guidelines
 
-### Who do I talk to? ###
 
-* Repo owner or admin
-* Other community or team contact
